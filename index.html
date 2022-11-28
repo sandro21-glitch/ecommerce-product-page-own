@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+
+        <header class="header">
+           <!-- Hidden for mobile -->
+           <div class="hamburger">
+            <div class="open">
+              <img src="/images/icon-menu.svg" alt="" id="open-nav">
+            </div>
+          </div>
+          <img src="/images/logo.svg" alt="logo" />
+            <nav class="nav" id="nav">
+                <ul class="unlisted">
+                  <div class="close">
+                    <img src="/images/icon-close.svg" alt="" id="close-nav">
+                  </div>
+                    <li><a href="#">Collections </a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart-container">
+              <button class="cart">
+                <div class="count-icon hidden">1</div>
+                <img src="/images/icon-cart.svg" alt="cart-icon" />
+              </button>
+              <div class="avatar">
+                <img src="/images/image-avatar.png" alt="avatar" />
+              </div>
+
+              <div class="empty-cart hidden">
+                <h3>Cart</h3>
+                <p class="empty-para">Your cart is empty.</p>
+                <div class="added-items hidden">
+                  <div class="top-side">
+                    <div class="infos">
+                      <img src="/images/image-product-1-thumbnail.jpg" alt="" />
+                        <div class="info">
+                          <div class="mains">
+                            <p class="name">Autumn Limited Edition...<p>
+                              <p>$125.00 x <span class="amount">0</span>
+                                <span class="total">$125.00</span></p>
+                              </div>
+                        </div>
+                      <div class="check-button">
+                        <button class="remove-icon">
+                          <img src="/images/icon-delete.svg" alt="">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                
+                <div class="bot-side">
+                  <button class="checkout" id="checkout">
+                    Checkout
+                  </button>
+                </div>
+                  </div>
+                  </div>
+                </div>
+                        
+
+           
+
+        </header>
+
+        <main class="main">
+          
+          <!-- Left Section Start -->
+          <div class="left-container">
+            <div class="main-img">
+              <img src="/images/image-product-1.jpg" alt="">
+            </div>
+            <div class="slide-images">
+              <button class="slide">
+                  <img src="/images/image-product-1.jpg" alt="" class="active">
+              </button>
+              <button class="slide">
+                  <img src="/images/image-product-2.jpg" alt="">
+              </button>
+              <button class="slide">
+                  <img src="/images/image-product-3.jpg" alt="">
+              </button>
+              <button class="slide">
+                  <img src="/images/image-product-4.jpg" alt="">
+              </button>
+            </div>
+          </div>
+          <!-- Left Section End -->
+
+          <!-- Right Section Start -->
+          <div class="right-container">
+              <h2 class="sub">SNEAKER COMPANY</h2>
+              <h1 class="heading">Fall Limited Edition Sneakers</h1>
+              <p class="para">These low-profile sneakers are your perfect
+                 casual wear companion. Featuring a durable rubber outer sole,
+                 they’ll withstand everything the weather can offer.
+                </p>
+                <div class="prices">
+                  <h3 class="price-now">$125.00 
+                    <span class="discount">50%</span>
+                  </h3>
+                  <div class="old-price">
+                    <del>$250.00</del>
+                  </div>
+                </div>
+
+                <div class="checkout">
+                  <div class="amount-count">
+                    <button class="minus" id="minus">
+                      <img src="/images/icon-minus.svg" alt="">
+                    </button>
+                    <div class="amount" id="amount">0</div>
+                    <button class="plus" id="plus">
+                      <img src="/images/icon-plus.svg" alt="">
+                    </button>
+                  </div>
+
+                  <button class="addToCart" id="addToCart">
+                    <img src="/images/icon-cart-white.svg" alt="">
+                    Add to cart
+                  </button>
+
+                </div>
+
+          </div>
+          <!-- Right Section End -->
+
+        </main>
+
+
+
+    
+    <script src="/app.js"></script>
+  </body>
+</html>
